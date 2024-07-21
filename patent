@@ -1,0 +1,86 @@
+### Titre de l'Invention
+
+Système et Méthode de Vérification et de Protection Contre les Chèques Impayés
+
+### Contexte de l'Invention
+
+Domaine de l'Invention
+
+Cette invention concerne les systèmes de sécurité financière, en particulier une plateforme conçue pour vérifier et protéger les entreprises contre les chèques impayés.
+
+Informations de Contexte
+
+De nombreuses entreprises font face à des risques financiers dus aux chèques impayés. Les méthodes existantes, telles que les vérifications de crédit traditionnelles, sont insuffisantes pour fournir des informations spécifiques et en temps réel concernant les paiements par chèque.
+
+### Résumé de l'Invention
+
+Le but de la plateforme Verich est d'aider les entreprises à se protéger contre les chèques impayés en fournissant une solution simple pour vérifier la fiabilité des clients. Les principales fonctionnalités incluent :
+
+1. Une base de données des individus ayant des chèques impayés.
+2. Des outils permettant aux entreprises d'ajouter ou de supprimer des individus de cette base de données.
+3. Un système de vérification permettant aux entreprises de vérifier la fiabilité des clients avant d'accepter des chèques.
+4. Des notifications aux clients sur les conséquences des chèques impayés.
+
+### Description Détaillée de l'Invention
+
+Architecture du Système
+
+Base de Données
+
+La plateforme utilise une base de données structurée pour stocker des informations sur les individus ayant des chèques impayés. Cette base de données est construite sur VSCODE et est sécurisée à l'aide de contrôles d'accès.
+
+Interface Utilisateur
+
+L'interface web/mobile permet aux entreprises d'accéder facilement à la plateforme. L'interface est conçue pour être simple et efficace, permettant aux utilisateurs d'effectuer des vérifications avec un minimum d'étapes.
+
+Processus de Vérification
+
+Les entreprises peuvent entrer les détails du client dans la plateforme. Le système croise ces détails avec la base de données et renvoie un score de fiabilité basé sur l'historique de paiement par chèque du client.
+
+Système de Notification
+
+Les clients sont informés de leur statut par des emails ou SMS automatiques. Ces notifications les informent des conséquences des chèques impayés et fournissent des instructions sur la manière de résoudre les problèmes.
+
+Flux de Travail Opérationnel
+
+Inscription et Connexion
+
+Les entreprises s'inscrivent sur la plateforme en utilisant leurs identifiants professionnels. Après l'inscription, elles peuvent se connecter en utilisant des méthodes d'authentification sécurisées.
+
+Saisie de Données
+
+Les entreprises peuvent ajouter ou supprimer des individus de la base de données via un simple formulaire sur la plateforme. Chaque entrée est vérifiée pour son exactitude avant d'être stockée dans la base de données.
+
+Vérification des Chèques
+
+Le processus de vérification implique l'entrée des détails du client et la réception d'un score de fiabilité immédiat basé sur leur historique de paiement.
+
+Notifications
+
+Les notifications sont envoyées automatiquement aux clients lors de tout changement de leur statut. Ces notifications sont personnalisables selon les préférences de l'entreprise.
+
+### Revendications
+
+1. Un système pour vérifier et protéger les entreprises contre les chèques impayés, comprenant : une base de données stockant des informations sur les individus ayant des chèques impayés, une interface utilisateur permettant aux entreprises d'accéder à la base de données, et un processus de vérification pour vérifier la fiabilité des clients.
+2. Le système de la revendication 1, dans lequel la base de données est mise à jour en temps réel avec de nouvelles informations sur les chèques impayés.
+3. Le système de la revendication 1, comprenant en outre un système de notification qui alerte les clients sur leur statut et les conséquences des chèques impayés.
+
+### Résumé
+
+Un Système et une Méthode de Vérification et de Protection Contre les Chèques Impayés sont divulgués. La plateforme comprend une base de données des individus ayant des chèques impayés, une interface utilisateur permettant aux entreprises d'accéder à la base de données, un processus de vérification pour vérifier la fiabilité des clients, et un système de notification pour informer les clients de leur statut et des conséquences des chèques impayés. Cette invention vise à réduire les risques financiers pour les entreprises en fournissant des informations précises et en temps réel sur les paiements par chèque.
+
+### Conditions Spécifiques et Considérations Légales
+
+Confidentialité des Données Utilisateur
+
+Toutes les données utilisateur sont traitées conformément aux lois sur la protection des données pertinentes, telles que le RGPD. Les données sont cryptées et l'accès est contrôlé pour garantir la confidentialité et la sécurité.
+
+Exactitude et Responsabilité
+
+Bien que la plateforme vise à fournir des informations précises, la décision finale et la responsabilité incombent à l'entreprise utilisant la plateforme. Il est conseillé aux entreprises d'utiliser les informations comme guide et de procéder à des vérifications supplémentaires si nécessaire.
+
+Mises à Jour et Maintenance
+
+La plateforme sera mise à jour et maintenue régulièrement pour assurer son exactitude et sa fiabilité. Les utilisateurs seront informés de tout changement ou mise à jour significative de la plateforme.
+
+---

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base.css">
+    <link rel="icon" href="verich1.png">
+    <title>Login Page</title>
+    <style>
+        /* Additional styles specific to this combined page */
+        #main-content {
+            display: none; /* Hide main content initially */
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>VERICH</h2>
+
+    <div class="navb">
+        <ul>
+            <li><a href="home.html" class="link"><p>ACCUEIL</p></a></li>
+            <li><a href="base.html" class="link"><p>BASE</p></a></li>
+            <li><a href="news.html" class="link"><p>ACTUALITÉS</p></a></li>
+            <li><a href="contact.html" class="link"><button><p>CONTACTS</p></button></a></li>
+        </ul>
+    </div>
+    
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <button type="submit">Login</button>
+    </form>
+
+<p id="contact">* Pour s'abonner à la platforme veuillez appeler 93 218 896  <br></p>
+
+    <div id="main-content">
+        <header>
+            <h1>Save your business</h1>
+            <input type="text" id="searchBar" placeholder="Search for names...">
+        </header>
+        <div class="profiles">
+            <div class="profile" data-name="the name">
+                <img src="https://via.placeholder.com/150" alt="the name">
+                <h2>the name</h2>
+                <p>description</p>
+            </div>
+            <div class="profile" data-name="the name 1">
+                <img src="https://via.placeholder.com/150" alt="the name 1">
+                <h2>the name 1</h2>
+                <p>description</p>
+            </div>
+            <div class="profile" data-name="the name 2">
+                <img src="https://via.placeholder.com/150" alt="the name 2">
+                <h2>the name 2</h2>
+                <p>description</p>
+            </div>
+            <!-- Add more profiles as needed -->
+        </div>
+    
+        <script>
+            document.getElementById('searchBar').addEventListener('keyup', function() {
+                let filter = this.value.toLowerCase();
+                let profiles = document.getElementsByClassName('profile');
+                
+                Array.from(profiles).forEach(function(profile) {
+                    let name = profile.getAttribute('data-name').toLowerCase();
+                    if (name.includes(filter)) {
+                        profile.style.display = '';
+                    } else {
+                        profile.style.display = 'none';
+                    }
+                });
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+                // Check if the referrer is not your own domain
+                if (document.referrer && document.referrer.indexOf(window.location.origin) !== 0) {
+                    alert('Access denied. Please access this site from a valid link.');
+                    window.location.href = 'https://example.com'; // Redirect to another page or show an access denied message
+                }
+            });
+        </script>
+    </div>
+
+    <script>
+        // Array of allowed usernames and passwords
+        const allowedUsers = [
+            { username: 'john', password: 'password1' },
+            { username: 'jane', password: 'password2' },
+            { username: 'admin', password: 'password3' }
+        ]; // Add more users as needed
+
+        // Function to check if username is allowed
+        function isAllowedUser(username, password) {
+            return allowedUsers.some(user => 
+                user.username.toLowerCase() === username.toLowerCase() &&
+                user.password === password
+            ); // Case insensitive check for username
+        }
+
+        // Event listener for form submission
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get entered username and password
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            // Check if username and password are allowed
+            if (isAllowedUser(username, password)) {
+                alert('Login successful! Welcome, ' + username + '.');
+                // Show main content
+                document.getElementById('main-content').style.display = 'block';
+                // Optionally, you can hide the login form after successful login
+                document.getElementById('loginForm').style.display = 'none';
+            } else {
+                alert('Access denied. Invalid username or password.');
+                // Clear form or handle denied access
+            }
+        });
+    </script>
+</body>
+</html>
